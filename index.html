@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('homelinks-theme')
+          var theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          document.documentElement.dataset.theme = theme
+        } catch (_) {}
+      })()
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Шоппинг</title>
+    <script type="module" crossorigin src="/assets/index-_KN3ZeSN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CEUgtxj8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
